@@ -1,0 +1,26 @@
+{
+  "name": "flowtag-ci",
+  "version": "0.0.1",
+  "description": "Command line helper app for versioning npm modules using git flow and semver",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conorturner/flowtag-ci.git"
+  },
+  "keywords": [
+    "git",
+    "flow",
+    "npm",
+    "module",
+    "ci"
+  ],
+  "author": "Conor Turner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/conorturner/flowtag-ci/issues"
+  },
+  "homepage": "https://github.com/conorturner/flowtag-ci#readme"
+}
