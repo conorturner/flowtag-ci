@@ -10,10 +10,10 @@ program
 
 
 const tags = execSync(`git tag`).toString().split("\n");
-const branch = program.branch || execSync("git rev-parse --abbrev-ref HEAD;").toString();
+const branch = program.branch;
 
 const currentVersion = "v" + require(`${process.cwd()}/package.json`).version;
-const postfix = branch === "master" ? "" : `-${branch}`;
+const postfix = branch === "master" || branch === undefined ? "" : `-${branch}`;
 const currentTag = currentVersion + postfix;
 
 if(tags.includes(currentTag)) {
