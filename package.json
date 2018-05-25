@@ -1,6 +1,6 @@
 {
   "name": "flowtag-ci",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Command line helper app for versioning npm modules using git flow and semver",
   "main": "index.js",
   "scripts": {

@@ -8,6 +8,7 @@ program
 	.option('-b, --branch [branch]')
 	.parse(process.argv);
 
+execSync(`git fetch --tags`);
 
 const tags = execSync(`git tag`).toString().split("\n");
 const branch = program.branch;
@@ -22,5 +23,6 @@ if(tags.includes(currentTag)) {
 }
 else {
 	execSync(`git tag ${currentTag}`);
+	execSync(`git push --tags`);
 	console.log(`Tagged as: ${currentTag}`);
 }
